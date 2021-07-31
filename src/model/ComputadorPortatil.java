@@ -3,6 +3,11 @@ package model;
 public class ComputadorPortatil {
    private int extraBatery;
    private int extraCharger;
+   private double calculo;
+
+   public double calcularPrecio() {
+       return calculo; //quede aca en este metodo
+   }
 
    public int getExtraBatery() {
        return extraBatery;
