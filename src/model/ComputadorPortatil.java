@@ -6,7 +6,7 @@ public class ComputadorPortatil {
    private double calculo;
 
    public double calcularPrecio() {
-       return calculo; //quede aca en este metodo
+       return calculo; 
    }
 
    public int getExtraBatery() {
