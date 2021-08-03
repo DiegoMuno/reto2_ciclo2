@@ -10,16 +10,20 @@ public class TotalPrice {
     private double totalLaptops;
     private double totalDesktops;
 
-    private Computador computador;
+    private Computador computadores;
 
-    public TotalPrice(double totalPcs, double totalLaptops, double totalDesktops, Computador computador) {
+    public TotalPrice(Computador computadores) {
         super();
-        this.totalPcs = totalPcs;
-        this.totalLaptops = totalLaptops;
-        this.totalDesktops = totalDesktops;
-        this.computador = computador;
-        computadoras = new ArrayList<>(); // ultimo punto agregando la lista video 22 julio 1:13 horas
+        // this.totalPcs = totalPcs;
+        // this.totalLaptops = totalLaptops;
+        // this.totalDesktops = totalDesktops;
+        this.computadores = computadores;
+        computadoras = new ArrayList<>(); // agregando la lista video 22 julio 1:13 horas
     }
+
+    // public String mostrarTotales() {
+        
+    // }
 
     public double getTotalDesktops() {
         return totalDesktops;
@@ -33,8 +37,8 @@ public class TotalPrice {
         return totalPcs;
     }
 
-    public Computador getComputador() {
-        return computador;
+    public ArrayList<Computador> getComputadoras() {
+        return computadoras;
     }
 
     public void setTotalDesktops(double totalDesktops) {
@@ -49,8 +53,8 @@ public class TotalPrice {
         this.totalPcs = totalPcs;
     }
 
-    public void setComputador(Computador computador) {
-        this.computador = computador;
+    public void setComputadoras(ArrayList<Computador> computadoras) {
+        this.computadoras = computadoras;
     }
 
 }

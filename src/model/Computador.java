@@ -8,19 +8,36 @@ public class Computador {
     public static final double PRECIO_BASE = 0;
     public static final double PRECIO_MOUSE = 0;
     public static final double PRECIO_HEADPHONE = 0;
-    private double mouse;
-    private double headphone;
-    private double precioBase;
-    private double precioFinal;
+    public double mouse;
+    public double headphone;
+    public double precioBase;
+    public double precioFinal;
 
 
     public Computador() {
-        super();        
+        super();  
+        mouse = PRECIO_MOUSE;
+        headphone = PRECIO_HEADPHONE;
+        precioBase = PRECIO_BASE;      
+    }
+
+    public Computador(double precioBase, double headphone) {
+        super();
+        this.precioBase = precioBase;
+        this.headphone = headphone;
+        mouse = PRECIO_MOUSE;
+    }
+
+    public Computador(double precioBase, double headphone, double mouse) {
+        super();
+        this.precioBase = precioBase;
+        this.headphone = headphone;
+        this.mouse = mouse;
     }
 
     //metodo para calcular precio basico de un pc
     public double calcularPrecio() {
-        precioFinal = mouse + headphone + precioBase;
+        precioFinal = mouse + headphone + precioBase + 5;
         return precioFinal;
     }
 
